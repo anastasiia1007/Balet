@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet" /> 
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/demo.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+
+
+<!-- slaider -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+	
+	$(function() {
+		$('.show_menu').click(function(){
+				$('.menu').fadeIn();
+				$('.show_menu').fadeOut();
+				$('.hide_menu').fadeIn();
+		});
+		$('.hide_menu').click(function(){
+				$('.menu').fadeOut();
+				$('.show_menu').fadeIn();
+				$('.hide_menu').fadeOut();
+		});
+	});
+  });
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Цвет ссылок</title>
+<style>
+ a {
+    color:#333; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+   }
+   a:visited {
+    color:#843f6b; /* Цвет посещённой ссылки */
+   } 
+   a:hover {
+    color:#f473c6; /* Цвет ссылки при наведении на нее курсора мыши */  
+    text-decoration: underline; /* Добавляем подчеркивание */
+	
+		  }
+		  
+.lightbox { display: none; /* не отображать в обычном состоянии */
+	position: fixed; /* закреплен позиционно */
+	z-index: 9999; /*высота относительно других элементов, "послойность". у кого больше значение - тот и выше*/
+	width: 100%; /* ширина лайтбокса относительно экрана */
+	height: 100%;  /* высота лайтбокса относительно экрана */ 
+	top: 0; /*  сдвиг сверху */
+	left: 0; /*  сдвиг слева */
+	background: rgba(0,0,0,0.8);} 
+.lightbox:target {outline: none; /*убрать стандартный браузерный контур*/
+display: block; }		
+
+
+
+@media screen and (max-width: 1024px) {
+.a {width:30%; height:400px}
+.b {width:30%; height:400px}
+.c {width:30%; height:400px}
+.d {width:30%; height:400px}
+.e {width:30%; height:400px}
+}
+
+@media screen and (max-width: 800px) {
+.a {width:60%; height:200px}
+.b {width:60%; height:200px}
+.c {width:60%; height:200px}
+.d {width:60%; height:200px}
+.e {width:60%; height:200px}
+}
+
+@media screen and (max-width: 320px) {
+.a {width:90%; height:80px}
+.b {width:90%; height:80px}
+.c {width:90%; height:80px}
+.d {width:90%; height:80px}
+.e {width:90%; height:80px}
+}  
+
+
+
+  </style>
+  
+  
+  </head>
+ 
+ 
+ 
+ <body>
+ 	<header>
+ <img src="img/balerina_left.png" width="2%" id="balerina1" />
+      <div id="verh">                         
+      <ul id="menu">
+ 			                
+ 			<li><a href="#a">О нас</a></li>
+                <li><a href="#b">Педагоги</a></li>
+                <li><a href="#c">Записаться на пробное 		занятие</a></li>
+                <li><a href="#d">События</a></li>
+                <li><a href="#e">Контакты</a></li>
+          	</ul>
+          </div> 
+     <img src="img/balerina_right.png" width="2%" id="balerina2"/>
+   
+     </header>
+     
+<section id="a">
+   <img src="img/tancstudia.png" width="20.7%"/>
+  <img src="img/dance.png" width="18%" id="dance"/>
+<div class="container">
+	 <div class="slider_container">
+	 		<div class="flexslider">
+	      		<ul class="slides">
+	    		<li><img src="img/slaider1.jpg" width="60%"/>
+	    	</li>
+	    	<li>
+	   			 <img src="img/slaider2.jpg" width="60%"/>
+			</li>
+	    	<li>
+	    	<img src="img/slaider3.jpg" width="60%"/>
+			</li>
+	    	<li>
+	    	<img src="img/slaider4.jpg" width="60%"/>
+			</li>
+	    </ul>
+	  </div>
+  </div>
+ </div>
+    
+    
+     <h1  id="priglashaem1">Школа балета для детей Dance</h1>
+<p id="priglashaem2">Приглашаем маленьких балерин и артистов балета на занятия в<br /> нашей детcкой школе. Уроки проходят во всех районах города<br /> под чутким руководством профессионалов.
+
+Работа над осанкой, пластичностью, координацией, уроки<br /> по хореографии, развитие чуства ритма и<br /> музыкальности - мы знаем как сделать балет для детей не только полезным,<br /> но и интересным занятием. Уже на ближайшем выступлении <br />вы увидите как изменился ваш ребенок!</p>
+</section>
+ 
+ 
+ <section id="b">
+	
+   <h1 id="prepod">Наши преподаватели</h1>
+   <a href="#image" class="a1">
+   <img src="img/prepod1.png" width="100%"/>
+   </a> 
+   <a id="image" class="lightbox" href="#_">
+   <img src="img/prepod1.png" width="20%"/> 
+   <p>А. А. Лиепа</p>
+   </a>
+   <a href="#image2" class="a1">
+   <img src="img/prepod2.png" width="100%"/>
+   </a>
+   <a id="image2" class="lightbox" href="#_">
+   <img src="img/prepod2.png" width="20%"/> 
+   <p>Б. И. Васильев</p>
+   </a>
+   <a href="#image3" class="a1">
+   <img src="img/prepod3.png" width="100%"/>
+   </a>
+   <a id="image3" class="lightbox" href="#_">
+   <img src="img/prepod3.png" width="20%"/> 
+   <p>С. Ф. Ксешинская</p>
+   </a>
+	<a href="#image4" class="a1">
+   <img src="img/prepod4.png" width="100%"/>
+   </a>
+   <a id="image4" class="lightbox" href="#_">
+   <img src="img/prepod4.png" width="20%"/> 
+   <p>Б. В. Плисецкий</p>
+   </a>
+
+  </section>  
+ 
+ <section id="c">
+  <h1 id="zapolnenie">Заполните форму обратной связи и мы свяжемся с вами в ближайшее время</h1>
+<iframe id="forma" src="https://docs.google.com/forms/d/e/1FAIpQLSfdf2ag2NpUCnwIqMmzgkmNzkJ_MVhzzkcjQxZvTBskPutfKA/viewform?embedded=true" width="50%" height="1024px" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+ </section>
+ 
+ <section id="d">
+	 <h1 id="sobytia">События</h1>
+   <div id="left">
+  
+<ul id="new">
+      
+      <li>Золотая пуанта. Районный конкурс</li>
+		
+         <li>Мастер-класс от Волочковой</li>
+	    
+         <li>День открытых дверей</li>
+     </ul>
+ <form>
+   <p>Выберите дату: <input type="date" name="calendar">
+   </p>
+  </form>
+ 
+ </section>
+ 
+  
+  <section id="e">
+ <h1 id="kontakty">Контакты</h1>
+ <iframe  id="left2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.3913649014721!2d30.293808715935537!3d59.9256478701088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630e30a0cacc3%3A0xaa771da24f3ce1cc!2z0JzQsNGA0LjQuNC90YHQutC40Lkg0YLQtdCw0YLRgCwg0KLQtdCw0YLRgNCw0LvRjNC90LDRjyDQv9C7LiwgMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPLCAxOTAwMDA!5e0!3m2!1sru!2sru!4v1540972377073" width="30%" frameborder="0" style="border:" allowfullscreen></iframe>
+ <div id="center">
+  <h1>Театральная площадь,</h1>
+  <h1>8-911-111-11-11</h1>
+ <h2>dance@gmail.com</h2>
+ <div id="socseti">
+ <img src="img/insta.png" width="15%" />
+ <img src="img/viber.png" width="15%" />
+ <img src="img/whatsapp.png" width="15%"/>
+ </div>
+ </div>
+ </div></section></body>
+</html>
+
+
